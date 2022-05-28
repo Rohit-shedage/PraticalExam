@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleImageSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image Switcher"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp" />
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/titleImageSwitcher"
+        android:layout_marginTop="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageSwitcher"
+        android:gravity="center"
+        android:id="@+id/buttonLayout">
+
+        <Button
+            android:id="@+id/buttonPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:text="Prev"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:layout_toEndOf="@id/buttonPrevious"
+            android:text="Next"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutEasterEgg"
+        android:layout_below="@id/buttonLayout">
+
+        <TextView
+            android:id="@+id/textEasterEgg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Created By"
+            android:gravity="center"
+            android:layout_alignBottom="@id/buttonNext"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

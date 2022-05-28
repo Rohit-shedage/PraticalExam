@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Databse"
+        android:layout_centerHorizontal="true"
+        android:textSize="42sp"
+        android:id="@+id/title"
+        android:layout_margin="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextName"
+        android:layout_below="@id/title"
+        android:hint="Insert Name"
+        android:layout_margin="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextEmail"
+        android:hint="Insert Email"
+        android:layout_below="@id/editTextName"
+        android:layout_margin="20dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Insert Number"
+        android:inputType="number"
+        android:maxLength="10"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonInsert"
+        android:layout_below="@id/editTextNumber"
+        android:layout_margin="10dp"
+        android:text="Insert Data"
+        android:textSize="18sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonUpdate"
+        android:layout_below="@id/buttonInsert"
+        android:layout_margin="10dp"
+        android:text="Update Data"
+        android:textSize="18sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDelete"
+        android:layout_below="@id/buttonUpdate"
+        android:layout_margin="10dp"
+        android:text="Delete Data"
+        android:textSize="18sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonView"
+        android:layout_below="@id/buttonDelete"
+        android:layout_margin="10dp"
+        android:text="View Data"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>

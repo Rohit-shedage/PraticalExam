@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <EditText
+            android:layout_height="match_parent"
+            android:layout_width="281dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:hint="Enter number"
+            android:inputType="text"
+            android:id="@+id/e1"
+            >
+        </EditText>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <RadioButton
+                android:layout_height="match_parent"
+                android:layout_width="209dp"
+                android:id="@+id/r1"
+                android:text="Odd or Even"/>
+
+            <RadioButton
+                android:layout_height="match_parent"
+                android:layout_width="209dp"
+                android:id="@+id/r2"
+                android:text="Positive or Negative"/>
+
+            <RadioButton
+                android:layout_height="match_parent"
+                android:layout_width="209dp"
+                android:id="@+id/r3"
+                android:text="Square"/>
+
+            <RadioButton
+                android:layout_height="match_parent"
+                android:layout_width="209dp"
+                android:id="@+id/r4"
+                android:text="Factorial"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/b1"
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="321dp"
+        android:layout_width="168dp">
+
+        <TextView
+            android:layout_height="44dp"
+            android:layout_width="157dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:hint="Output "
+            android:id="@+id/t1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:text=""/>
+
+    </LinearLayout>
+
+</LinearLayout>

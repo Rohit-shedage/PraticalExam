@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Enter items:"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="64dp"
+            />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Apple"
+            android:layout_marginTop="15dp"
+            android:textAlignment="gravity"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="121dp"
+             />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:text="Add to spinner"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="49dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:text="Remove from spinner"
+            android:layout_marginTop="15dp"
+            android:textAlignment="gravity"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="49dp" />
+    </TableRow>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="See Response Below"
+        android:textSize="23dp"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Apple"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center" />
+
+
+</TableLayout>

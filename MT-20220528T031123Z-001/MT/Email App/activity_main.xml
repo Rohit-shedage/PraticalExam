@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="emailAddress"
+        android:hint="Enter Email Address"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#757575"
+        />
+
+    <EditText
+        android:id="@+id/emailSubject"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="20dp"
+        android:autofillHints="emailAddress"
+        android:hint="Enter Email Subjerct"
+        android:inputType="textEmailSubject"
+        android:textColorHint="#757575"
+        />
+
+    <EditText
+        android:id="@+id/emailMessage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/emailSubject"
+        android:layout_marginTop="20dp"
+        android:autofillHints="emailAddress"
+        android:hint="Enter Email Message"
+        android:inputType="textMultiLine"
+        android:textColorHint="#757575"
+        />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailMessage"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="SEND"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonAttachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailMessage"
+        android:layout_marginLeft="178dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/buttonSend"
+        android:gravity="center"
+        android:text="ATTACH"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

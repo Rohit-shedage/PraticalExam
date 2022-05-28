@@ -1,0 +1,11 @@
+to create menu_main.xml 
+-> right click res -> new ->click Android Resource Directory 
+->set Resource type to "menu" -> click ok -> right click menu directory 
+->new -> Menu resource file -> name file -> click ok
+
+
+changes in android manifest-
+add activity for deposite and withdraw-
+
+ <activity android:name=".Deposite" />
+ <activity android:name=".Withdraw" />

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="String:"
+        android:layout_margin="20dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextString"
+        android:layout_toRightOf="@id/textViewString"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAddString"
+        android:layout_below="@id/textViewString"
+        android:layout_margin="5dp"
+        android:text="ADD"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonUpdateString"
+        android:layout_below="@id/textViewString"
+        android:layout_toRightOf="@id/buttonAddString"
+        android:layout_margin="5dp"
+        android:text="UPDATE"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDeleteString"
+        android:layout_below="@id/textViewString"
+        android:layout_toRightOf="@id/buttonUpdateString"
+        android:layout_margin="5dp"
+        android:text="DELETE"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonClearString"
+        android:layout_below="@id/textViewString"
+        android:layout_toRightOf="@id/buttonDeleteString"
+        android:layout_margin="5dp"
+        android:text="CLEAR"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@id/buttonAddString"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>
